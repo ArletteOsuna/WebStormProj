@@ -1,0 +1,65 @@
+body {
+    background-image: url("nailbackground.png");
+    font-family:arial, serif;
+}
+h1{
+    color: deeppink;
+    font-family: Farah, serif;
+    font-style: normal;
+    border-style: dotted;
+    width: 40%;
+    text-align: center;
+    font-size: 300%;
+
+}
+h2{
+    color: hotpink;
+    font-weight: bold;
+    border-style: solid;
+    font-size: 120%;
+    width: 12%;
+    text-align: center;
+}
+p{
+    font-size: 95%;
+    font-family: cursive;
+}
+ul{
+    font-size: 95%;
+    font-family: cursive;
+    color: blueviolet;
+}
+img{
+    background-color: lightpink;
+    padding: 5px 10px 10px 5px;
+    margin: 10px;
+    border: 5px dotted;
+    border-color: blueviolet;
+    /*top | right | bottom | left */
+}
+blockquote{
+    background-color: #ff9dc3;
+    color: blueviolet;
+    font-style: italic;
+    width: 30%
+}
+table{
+    border:2px solid black;
+    border-spacing: 2px;
+    width: 45%;
+    color:deeppink;
+    background-color: pink;
+}
+tbody tr:nth-child(even) {
+    background-color: #d5a5ea;
+}
+th, td {
+    border: 1px solid black;
+    padding: 2px;
+    text-align: center;
+}
+th {
+    height: 2px;
+    text-align: center;
+    vertical-align: bottom;
+}

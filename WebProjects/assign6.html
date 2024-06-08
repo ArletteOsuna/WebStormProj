@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 6</title>
+    <link rel="stylesheet" href="assign6.css">
+
+</head>
+<body>
+<h1 class = "header1">Homework 6</h1>
+<h2 class = "header2">Adding to an Array</h2>
+<p>The original array is [1, 23, 42, 5, 3, 10, 2, 4] <span id="array"></span></p>
+<p>The length is 8 <span id="length"></span></p>
+<label for="input">Enter a number to add to the end of the array:</label> <br><br>
+<input type="number" id="input">
+<button onclick="addNumber()" class = "button">Add Number</button> <br><br>
+<div id="output"></div>
+
+<script>
+    function addNumber() {
+        let array = [1, 23, 42, 5, 3, 10, 2, 4];
+        let input = document.getElementById("input").value;
+        if (!isNaN(input)) {
+            array.push(Number(input));
+            let output = document.getElementById("output");
+            let newArray = document.createElement("p");
+            let newLength = document.createElement("d");
+            newArray.innerHTML = "The new array is [" + array.join(", ") + "].";
+            newLength.innerHTML = "The new length is: " + array.length + ".";
+            output.appendChild(newArray);
+            output.appendChild(newLength);
+        }
+    }
+</script>
+
+<h2 class = "header2">Report Card</h2>
+<p id="college">bentley university</p>
+<p> Your Name: <span class = "student">Your Name Here</span>
+</p>
+<p id="message">We have serious concerns about your son/daughter's performance.</p>
+<ul>
+    <li id="science">Physics: <span class = "grade">D</span></li>
+    <li id="math">Calculus 2: <span class = "grade">F+</span></li>
+    <li id="language">English Literature: <span class = "grade">E</span></li>
+</ul>
+<p><span class = "student">Your Name Here</span> is <span id = "status">barely passing.</span>
+</p>
+<p id = "result"></p>
+<button onclick="change()" class = "button">Change Things</button> <br><br>
+
+<script>
+    function change() {
+        let college = document.getElementById("college");
+        college.innerHTML = college.innerHTML.toUpperCase(); //Bentley University is converted to uppercase letters
+
+        let student = document.querySelectorAll(".student");
+        for (let i = 0; i < student.length; i++) {
+            student[i].innerHTML = "Arlette Osuna"; //student is given a name
+        }
+
+        let message = document.getElementById("message");
+        message.innerHTML = "Your child’s performance is stellar."; //message is changed
+
+        let status = document.getElementById("status");
+        status.innerHTML = "is doing exceptionally well!"; //status is changed
+        status.style.color = "purple"; //text is changed to purple
+
+        let grades = document.querySelectorAll(".grade");
+        for (let i = 0; i < grades.length; i++) {
+            grades[i].innerHTML = "A"; //grades are changed
+        }
+    }
+</script>
+
+<h2 class = "header2">Determination of a Vowel or Consonant</h2>
+<p><label for="string">Enter a string:</label> <input type="text" id="string"></p>
+
+<p><label for="index">Enter the index:</label> <input type="number" id="index"></p>
+
+<button onclick="checkIndex()" class = "button">Check the entry</button>
+<p id="result2"></p>
+<script>
+
+    function checkIndex() {
+        let string = document.getElementById("string").value; //user input
+        string = string.toLowerCase()
+        let index = document.getElementById("index").value;  //user input
+        index= Number(index);
+        let character = string.charAt(index); //letter corresponding to the index
+        //let determination;
+        if (character === 'a' || character === 'e' || character === 'i' || character ==='o' || character ==='u' )
+
+            document.getElementById('result2').innerHTML = character + " is a vowel";
+
+        if (character === '1' || character === '2' || character === '3' || character ==='4' || character ==='5' ||
+            character === '6' || character === '7' || character === '8' || character ==='9' || character ==='0' ){
+
+            document.getElementById('result2').innerHTML = character + " is a number";
+        }
+    }
+
+</script>
+
+</body>
+</html>

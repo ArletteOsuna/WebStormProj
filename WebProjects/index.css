@@ -1,0 +1,59 @@
+.parent{
+    display: grid;
+    background-color: lavender;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 200px 200px 25px;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+.Header{
+    border: solid 5px #e85ca3;
+    background-color: #ec94d0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    text-align: center;
+    color: #e82687;
+    font-family: cursive;
+    font-size: xx-large;
+}
+.Footer{
+    background-color: #d5afee;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    text-align: center;
+}
+.Body{
+    border: dotted 5px mediumpurple;
+    background-color: #f89ec5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    text-align: center;
+    padding: 125px;
+    color: darkslateblue;
+    font-size: large;
+    font-family: cursive;
+}
+.LeftSide{
+    border: solid 5px plum;
+    background-color:thistle;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    text-align: center;
+    padding: 90px
+}
+
+.RightSide{
+    border: solid 5px plum;
+    background-color:thistle;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding: 7px;
+
+}
+
