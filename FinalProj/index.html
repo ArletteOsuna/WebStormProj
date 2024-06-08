@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1> Take a Quiz : Marvel Edition!</h1> <!--Title of the webpage-->
+
+<h2> 1. What was the first movie in the MCU? (Marvel Cinematic Universe)?</h2>
+    <p>Choices:</p> <!--Option choices-->
+    <p>Captain America</p>
+    <p>Iron-Man</p>
+    <p>Spider-Man</p>
+    <p>The Incredible Hulk</p>
+    <p><label><input type="text" id="movie"></label></p> <!--Text box is created-->
+    <p id = "updateText1" class="text"></p>
+    <p id = "incorrect" class="text2"></p>
+
+<h2> 2. Who was the villain in Spider-Man: Far From Home?</h2>
+    <p>Choices:</p> <!--Option choices-->
+    <p>Sand Man</p>
+    <p>Green Goblin</p>
+    <p>Venom</p>
+    <p>Mysterio</p>
+    <p><label><input type="text" id="villain"></label></p> <!--Text box is created-->
+    <p id = "updateText2" class="text"></p>
+    <p id = "incorrect1" class="text2"></p>
+
+<h2> 3. Who is the actress that plays Black Widow?</h2>
+    <p>Choices:</p> <!--Option choices-->
+    <p>Amy Adams</p>
+    <p>Scarlett Johansson</p>
+    <p>Natalie Portman</p>
+    <p>Jessica Chastain</p>
+    <p><label><input type="text" id="actress"></label></p> <!--Text box is created-->
+    <p id = "updateText3" class="text"></p>
+    <p id = "incorrect2" class="text2"></p>
+
+<h2> 4. Based on the image below, what movie does this scene take place in?</h2>
+<!--Three Images are displayed below -->
+<img src="/FinalProj/other/spider%20copy.png" alt="Spider-man" title="Spider-Man"
+     class="center"><img src="/FinalProj/other/spider%20copy.png" alt="Spider-man"
+                         title="Spider-Man" class="center"><img src="/FinalProj/other/spider%20copy.png"
+                                                                alt="Spider-man" title="Spider-Man" class="center">
+    <p>Choices:</p> <!--Option choices-->
+    <p>Doctor Strange</p>
+    <p>Doctor Strange: Multiverse of Madness</p>
+    <p>Spider-Man: No Way Home</p>
+    <p>Spider-Man: Homecoming</p>
+    <p><label><input type="text" id="image"></label></p> <!--Text box is created-->
+    <p id = "updateText4" class="text"></p>
+    <p id = "incorrect3" class="text2"></p>
+
+<h2> 5. Which actor voices Groot? </h2>
+    <p>Choices:</p> <!--Option choices-->
+    <p>Vin Diesel</p>
+    <p>Andy Serkis</p>
+    <p>Jonah Hill</p>
+    <p>Mark Hamill</p>
+    <p><label><input type="text" id="groot"></label></p> <!--Text box is created-->
+    <p id = "updateText5" class="text"></p>
+    <p id = "incorrect4" class="text2"></p>
+
+<h2> 6. What were the last words said by Thanos in Avengers: Endgame? </h2>
+    <p>Choices:</p> <!--Option choices-->
+    <p>"This Universe deserves balance"</p>
+    <p>"You can't undo what I've done. The job is already done"</p>
+    <p>"I am inevitable"</p>
+    <p>"The hardest choices require the strongest wills"</p>
+    <p><label><input type="text" id="thanosWords"></label></p> <!--Text box is created-->
+    <p id = "updateText6" class="text"></p>
+    <p id = "incorrect5" class="text2"></p>
+
+<h2> 7. Who is Wanda's significant other? </h2>
+    <p>Choices:</p> <!--Option choices-->
+    <p>Captain America</p>
+    <p>Vision</p>
+    <p>Hawkeye</p>
+    <p>Dr. Strange</p>
+    <p><label><input type="text" id="Wanda"></label></p> <!--Text box is created-->
+    <p id = "updateText7" class="text"></p>
+    <p id = "incorrect6" class="text2"></p>
+
+<h2> 8. Who broke Thor's hammer?</h2>
+    <p>Choices:</p> <!--Option choices-->
+    <p>Thanos</p>
+    <p>Loki</p>
+    <p>Hela</p>
+    <p>Ultron</p>
+    <p><label><input type="text" id="thor"></label></p> <!--Text box is created-->
+    <p id = "updateText8" class="text"></p>
+    <p id = "incorrect7" class="text2"></p>
+
+<button onclick="checkAnswers()" id="button" class="button">Check your answers</button> <!--On Click Button is displayed-->
+<p id="result" class="result"></p> <!--Used to display results-->
+<p id="wrong" class="wrong"></p> <!--Used to display wrong answers-->
+<p id="score" class="score"></p> <!--Used to display score-->
+
+
+</body>
+<script src="javascript.js"></script>
+</html>
+
